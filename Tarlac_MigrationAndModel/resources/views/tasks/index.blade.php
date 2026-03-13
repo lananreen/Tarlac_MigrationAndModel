@@ -20,7 +20,7 @@
 <body>
 
 <div class="container">
-    <h1>My Tasks</h1>
+    <h1>My Tasks ❤︎</h1>
 
     @if(session('success'))
         <div class="alert">
@@ -28,7 +28,7 @@
         </div>
     @endif
 
-    <a href="{{ route('tasks.create') }}" class="btn btn-primary">+ Create New Task</a>
+    <a href="{{ route('tasks.create') }}" class="btn btn-primary">Create New Task .ᐟ</a>
 
     <table>
         <thead>
@@ -52,7 +52,7 @@
                     <td class="actions">
                         <a href="{{ route('tasks.edit', $task) }}" style="color: #007bff; text-decoration: none;">Edit</a> 
                         
-                        <form action="{{ route('tasks.destroy', $task) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this task?');">
+                        <form action="{{ route('tasks.destroy', $task) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this task? :CC');">
                             @csrf
                             @method('DELETE')
                             <button type="submit" style="color: red; background: none; border: none; cursor: pointer; font-size: 16px;">Delete</button>
