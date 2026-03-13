@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\URL; // 1. Add this import
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +20,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // 2. Add this check for GitHub Codespaces
+        if (request()->server->has('HTTP_X_FORWARDED_HOST')) {
+            URL::forceRootUrl('https://' . request()->server('HTTP_X_FORWARDED_HOST'));
+            URL::forceScheme('https');
+        }
     }
 }

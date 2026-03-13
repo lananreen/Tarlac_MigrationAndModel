@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Management</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #fdc9e2; }
         .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th, td { border: 1px solid #fdc9e2; padding: 12px; text-align: left; }
         th { background-color: #f4f4f4; }
         .btn { padding: 8px 12px; text-decoration: none; border-radius: 4px; color: white; display: inline-block; }
-        .btn-primary { background-color: #007bff; }
-        .btn-primary:hover { background-color: #0056b3; }
-        .alert { color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; padding: 10px; border-radius: 4px; margin-bottom: 20px; }
+        .btn-primary { background-color: #fdc9e2; }
+        .alert { color: #ffffff; background-color: #fdc9e2; padding: 10px; border-radius: 4px; margin-bottom: 20px; }
         .completed { text-decoration: line-through; color: #888; }
-        .actions { display: flex; gap: 10px; }
+        .actions { display: flex; gap: 10px; align-items: center; }
     </style>
 </head>
 <body>
