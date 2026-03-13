@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Task</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f9f9f9; }
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #fdc9e2; }
         .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
         .form-group { margin-bottom: 15px; }
         label { display: block; margin-bottom: 5px; font-weight: bold; }
         input[type="text"], textarea { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box; }
         .checkbox-group { display: flex; align-items: center; gap: 10px; }
         .btn { padding: 10px 15px; text-decoration: none; border-radius: 4px; color: white; display: inline-block; border: none; cursor: pointer; }
-        .btn-primary { background-color: #28a745; }
+        .btn-primary { background-color: #fdc9e2; }
         .btn-secondary { background-color: #6c757d; margin-left: 10px; }
         .error { color: red; font-size: 0.9em; margin-top: 5px; }
     </style>
