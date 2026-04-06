@@ -79,3 +79,32 @@ tbody tr {
 .empty-state {
     @apply py-10 px-4 text-center text-pink-400 italic;
 }
+
+.form-group {
+    @apply mb-5;
+}
+
+.form-label {
+    @apply block mb-2 font-bold text-pink-800;
+}
+
+.form-input {
+    @apply w-full p-3 border border-pink-200 rounded-lg bg-pink-50 text-gray-800 transition duration-200;
+}
+
+/* This adds a pink outline when you click inside the text box */
+.form-input:focus {
+    @apply outline-none ring-2 ring-pink-400 border-transparent bg-white;
+}
+
+.form-actions {
+    @apply mt-8 flex items-center;
+}
+
+.btn-secondary {
+    @apply bg-gray-400 hover:bg-gray-500 text-white ml-3;
+}
+
+.form-error {
+    @apply text-red-500 text-sm mt-2 font-semibold;
+}
