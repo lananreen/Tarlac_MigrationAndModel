@@ -38,7 +38,7 @@ h1 {
     @apply bg-pink-500 hover:bg-pink-600 text-white;
 }
 
-/* === Table Structure === */
+
 table {
     @apply min-w-full bg-white mt-4 border-collapse;
 }
@@ -59,7 +59,7 @@ tbody tr {
     @apply hover:bg-pink-50 transition duration-150;
 }
 
-/* === Task Specific Styles === */
+
 .completed strong {
     @apply line-through text-gray-400 font-normal;
 }
