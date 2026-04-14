@@ -9,10 +9,18 @@ class Task extends Model
 {
     use HasFactory;
 
-    // Allow mass assignment for these columns
     protected $fillable = [
-        'title', 
-        'description', 
-        'is_completed'
+        'title',
+        'description',
+        'is_completed', 
     ];
-}
+
+    protected $casts = [
+        'is_completed' => 'boolean',
+    ];
+
+    public function getStatusAttribute(): string
+    {
+        return $this->is_completed ? 'Completed' : 'Pending';
+    }
+} 
